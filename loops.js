@@ -17,16 +17,12 @@ function forLoop(array){
 
 
 function doWhileLoop(array){
-  while(!(array.length <= 0 || !maybeTrue())){
-    console.log("pop")
+  do{
     array.pop()
-  }
+  }while(!(array.length <= 0 || !maybeTrue()))
   return array
 }
 
 function maybeTrue(){
-  var val =  Math.random() 
-  var rand = val >= 0.5
-  console.log(val)
-  return rand
+  return Math.round() >= 0.5
 }
